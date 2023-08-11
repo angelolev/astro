@@ -12,10 +12,12 @@ import ContentMedia from '../components/ContentMedia.astro'
     <div class="container">
       <h2 class="mb-16 text-6xl" id="agenda">Agenda</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:code-tags" title="Apertura del evento">Apertura oficial del evento con X y Y</Feature>
-        <Feature icon="mdi:code-greater-than" title="Charla 1">A revelar</Feature>
+        <Feature icon="mdi:code-tags" title="Apertura del evento">TBD</Feature>
         <Feature icon="mdi:code-greater-than" title="Charla 2">A revelar</Feature>
         <Feature icon="mdi:code-greater-than" title="Charla 3">A revelar</Feature>
+        <Feature icon="mdi:code-greater-than" title="¿Cómo consigo mi primer empleo?">
+          <strong>Angelo Leva</strong> - Frontend Dev en <a href="https://www.tranzact.net">Tranzact</a>
+        </Feature>
         <Feature icon="mdi:code-greater-than" title="Charla 4">A revelar</Feature>
         <Feature icon="mdi:code-greater-than" title="Charla 5">A revelar</Feature>
         <Feature icon="mdi:gift-outline" title="Entrega de premios">A revelar</Feature>
@@ -70,7 +72,7 @@ import ContentMedia from '../components/ContentMedia.astro'
 <style lang="scss">
   .speakers {
     background-color: var(--action-color);
-    padding: 30px 0;
+    padding: 60px 0;
   }
 
   .grid {
