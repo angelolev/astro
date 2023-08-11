@@ -7,10 +7,8 @@ const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
 <div class="feature flex flex-col gap-4">
   <Icon name={icon} />
   <div class="content">
-    <h3>{title}</h3>
-    <p>
-      <slot>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, corporis.</slot>
-    </p>
+    <h3 class="mb-[10px]">{title}</h3>
+    <slot />
   </div>
 </div>
 
@@ -25,10 +23,6 @@ const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
     > * {
       position: relative;
       z-index: 2;
-    }
-
-    p {
-      margin-top: 10px;
     }
 
     @include breakpoint(large) {
@@ -66,5 +60,10 @@ const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
   :global(.darkmode .feature::before) {
     background-color: var(--dark-100);
     box-shadow: 0 0 0 6px var(--dark-100);
+  }
+
+  :global(.feature .content ul) {
+    list-style: disc;
+    padding-left: 20px;
   }
 </style>

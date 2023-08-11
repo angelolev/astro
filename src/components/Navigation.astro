@@ -262,6 +262,7 @@ import { DarkMode } from 'accessible-astro-components'
     nav {
       > ul {
         display: flex;
+        align-items: center;
         gap: 1.5rem;
         list-style-type: none;
 
@@ -278,7 +279,7 @@ import { DarkMode } from 'accessible-astro-components'
         .is-active,
         .has-dropdown > button:hover,
         .has-dropdown > button:focus {
-          text-decoration: underline;
+          // text-decoration: underline;
           text-decoration-thickness: 1px;
           text-decoration-style: wavy;
           text-underline-offset: 7px;
