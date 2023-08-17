@@ -9,6 +9,7 @@ const {
   title = 'Tacna Programa',
   description = 'Codifica Tu Éxito: Cursos de Desarrollo Web que Potencian Tu Futuro. Especializamos a la comunidad tech de Tacna con el futuro del desarrollo web',
   url,
+  image = '/tacna-programa.png'
 } = Astro.props
 ---
 
@@ -21,7 +22,7 @@ const {
     <!-- favicon -->
     <link rel="icon" type="image/svg+xml" href="/code.svg" />
 
-    <SiteMeta title={title} description={description.substring(0, 100)} />
+    <SiteMeta title={title} description={description.substring(0, 100)}  image={image} />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTGE3PWV70"></script><script>
       window.dataLayer = window.dataLayer || []
       function gtag() {
