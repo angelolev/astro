@@ -15,28 +15,34 @@ import ContentMedia from '../components/ContentMedia.astro'
         <Feature icon="mdi:code-tags" title="Apertura del evento">Keynote</Feature>
 
         <Feature icon="mdi:code-greater-than" title="Charla 1">
-          <a href="https://www.linkedin.com/in/eduarapaza/" target="_blank">Eduar Apaza</a> - Senior Software Engineer en
-          <a href="https://www.exabeam.com/"><strong>Exabeam</strong></a>
+          <a target="_blank" href="https://www.linkedin.com/in/eduarapaza/" target="_blank">Eduar Apaza</a> - Senior Software
+          Engineer en
+          <a target="_blank" href="https://www.exabeam.com/"><strong>Exabeam</strong></a>
         </Feature>
-        <Feature icon="mdi:code-greater-than" title="Charla 2">
-          <a href="https://www.linkedin.com/in/alonsocn/" target="_blank">Alonso Calle</a> - Senior Frontend en <a
-            href="https://www.tektonlabs.com"><strong>Tekton Labs</strong></a
-          >
+        <Feature icon="mdi:code-greater-than" title="Write for Humans, Not Just Machines: Unless Robots Take Over">
+          <a target="_blank" href="https://www.linkedin.com/in/alonsocn/" target="_blank">Alonso Calle</a> - Senior Frontend
+          en <a target="_blank" href="https://www.tektonlabs.com"><strong>Tekton Labs</strong></a>
         </Feature>
-        <Feature icon="mdi:code-greater-than" title="¿Cómo consigo mi primer empleo en tech?">
-          <a href="https://www.linkedin.com/in/angeloleva/" target="_blank">Angelo Leva</a> - Senior Frontend en <a
-            href="https://www.tranzact.net"><strong>Tranzact</strong></a
-          >
+        <Feature icon="mdi:code-greater-than" title="Rise to the 1% and Unleash Your Developer Expertise">
+          <a target="_blank" href="https://www.linkedin.com/in/angeloleva/" target="_blank">Angelo Leva</a> - Senior Frontend
+          en <a target="_blank" href="https://www.tranzact.net"><strong>Tranzact</strong></a>
         </Feature>
-        <Feature icon="mdi:code-greater-than" title="Charla 4">A revelar</Feature>
+        <Feature icon="mdi:code-greater-than" title="Empleabilidad en Tecnología">
+          <a target="_blank" href="https://www.linkedin.com/in/brandochirinos/" target="_blank">Brando Chirinos</a> - People
+          Lead en <a target="_blank" href="https://www.tektonlabs.com"><strong>Tekton Labs</strong></a>
+        </Feature>
         <Feature icon="mdi:code-greater-than" title="Charla 5">
-          <a href="/" target="_blank">Jorge Pacora</a> - Software Developer
+          <a target="_blank" href="/" target="_blank">Jorge Pacora</a> - Software Developer
         </Feature>
-        <Feature icon="mdi:code-greater-than" title="Computer Engineer: Past, Present and Future">
-          <a href="https://www.linkedin.com/in/angeloleva/" target="_blank">Uzi Mamani</a> - Expert Associate Partner en
-          <a href="https://www.mckinsey.com/"><strong>McKinsey & Company</strong></a>
+        <Feature
+          icon="mdi:code-greater-than"
+          title="Code Chronicles: Evolution of Software Engineering skills across the time"
+        >
+          <a target="_blank" href="https://www.linkedin.com/in/angeloleva/" target="_blank">Uzi Mamani</a> - Expert Associate
+          Partner en
+          <a target="_blank" href="https://www.mckinsey.com/"><strong>McKinsey & Company</strong></a>
         </Feature>
-        <Feature icon="mdi:gift-outline" title="Entrega de premios"><p>Networking</p></Feature>
+        <Feature icon="mdi:gift-outline" title="Networking"><p>Premios/sorteos</p></Feature>
         <Feature icon="mdi:human-male-board" title="Talleres Web">
           <ul>
             <li>Astro: Construye la web que necesitas</li>
@@ -44,8 +50,6 @@ import ContentMedia from '../components/ContentMedia.astro'
             <li>TBD</li>
           </ul>
         </Feature>
-        <Feature icon="mdi:human-male-board" title="Talleres UI/UX">A revelar</Feature>
-        <Feature icon="mdi:human-male-board" title="Talleres Móvil">A revelar</Feature>
       </div>
     </div>
   </section>
@@ -75,7 +79,10 @@ import ContentMedia from '../components/ContentMedia.astro'
           <img src="./tekton.png" />
         </div>
         <div class="company">
-          <img src="./bcp.png" />
+          <img src="./mckinsey.svg" />
+        </div>
+        <div class="company">
+          <img src="./exabeam.svg" />
         </div>
         <div class="company">
           <img src="./deepskill.png" />
@@ -102,6 +109,12 @@ import ContentMedia from '../components/ContentMedia.astro'
       &:first-child {
         img {
           height: 100px;
+        }
+      }
+
+      &:nth-child(4) {
+        img {
+          height: 150px;
         }
       }
 
